@@ -9,18 +9,10 @@ interface PulseEffect {
   y: number
 }
 
-interface TrailHeart {
-  id: number
-  x: number
-  y: number
-  delay: number
-}
-
 export default function HeartCursor() {
   const [isClicking, setIsClicking] = useState(false)
   const [isHovering, setIsHovering] = useState(false)
   const [pulses, setPulses] = useState<PulseEffect[]>([])
-  const [trails, setTrails] = useState<TrailHeart[]>([])
 
   // Use motion values for maximum performance
   const mouseX = useMotionValue(0)

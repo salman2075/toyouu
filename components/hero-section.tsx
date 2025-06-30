@@ -17,7 +17,7 @@ export default function HeroSection() {
       transition: {
         staggerChildren: 0.2,
         delayChildren: 0.3,
-        ease: [0.25, 0.46, 0.45, 0.94],
+        ease: [0.25, 0.46, 0.45, 0.94] as const,
       },
     },
   }
@@ -29,7 +29,7 @@ export default function HeroSection() {
       y: 0,
       transition: {
         duration: 1.2,
-        ease: [0.25, 0.46, 0.45, 0.94],
+        ease: [0.25, 0.46, 0.45, 0.94] as const,
       },
     },
   }
@@ -41,7 +41,7 @@ export default function HeroSection() {
       transition: {
         duration: 5,
         repeat: Number.POSITIVE_INFINITY,
-        ease: "easeInOut",
+        ease: "easeInOut" as const,
       },
     },
   }

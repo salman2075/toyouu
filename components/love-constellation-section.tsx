@@ -32,7 +32,7 @@ export default function LoveConstellationSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
   const [stars, setStars] = useState<StarPoint[]>([])
   const [connections, setConnections] = useState<Array<[number, number]>>([])
-  const [selectedStar, setSelectedStar] = useState<number | null>(null)
+  // const [selectedStar, setSelectedStar] = useState<number | null>(null)
   const [showMessage, setShowMessage] = useState<string | null>(null)
   const [isComplete, setIsComplete] = useState(false)
 
@@ -70,11 +70,9 @@ export default function LoveConstellationSection() {
 
   const handleStarClick = (starId: number, message: string, e: React.MouseEvent) => {
     e.stopPropagation()
-    setSelectedStar(starId)
     setShowMessage(message)
     setTimeout(() => {
       setShowMessage(null)
-      setSelectedStar(null)
     }, 3000)
   }
 
@@ -82,7 +80,6 @@ export default function LoveConstellationSection() {
     setStars([])
     setConnections([])
     setIsComplete(false)
-    setSelectedStar(null)
     setShowMessage(null)
   }
 

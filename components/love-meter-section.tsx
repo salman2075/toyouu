@@ -109,7 +109,7 @@ export default function LoveMeterSection() {
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.8, delay: 1.0 }}
                 >
-                  You are in my heart and you have all of my heart all 100% of it, And You you you 're on my mindddd...24/7 you are on my mind
+                  You are in my heart and you have all of my heart all 100% of it, And You you you&nbsp;&rsquo;re on my mindddd...24/7 you are on my mind
                   No matter how much i tell you i miss you it wont be enough to justifyy how much i miss my babbyy!!
                 </motion.p>
                 <motion.p

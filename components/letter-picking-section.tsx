@@ -56,7 +56,7 @@ export default function LetterPickingSection() {
       "powder-blue": "bg-powder-blue/30",
       lavender: "bg-lavender/30",
     }
-    return colorMap[color] || "bg-blush/30"
+    return (colorMap as Record<string, string>)[color] || "bg-blush/30"
   }
 
   return (
